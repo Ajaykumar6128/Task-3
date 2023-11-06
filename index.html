@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+
+        <title>Sunshine Food Co</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/pricing.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript">
+            INR(window).load(function() {
+                INR('.flexslider').flexslider({
+                 animation: "slide",
+                 controlsContainer: ".flexslider-container"
+                });
+            });
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var mapOptions = {
+                    center: new google.maps.LatLng(24.909439, 91.833800),
+                    zoom: 16,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions)
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.909439, 91.833800),
+                    title:"Take Punjabi"
+                });
+
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
+        <style type="text/css">
+            .style1
+            {
+                font-family: "Times New Roman", Times, serif;
+                font-size: medium;
+                padding: 12% 15%;
+            }
+        </style>
+
+
+    </head>
+    <body data-spy="scroll" data-target="#template-navbar">
+
+        <!--== 4. Navigation ==-->
+        <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="images/c1.png" 
+                        class="logo img-responsive">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="Food-fair-toggle" style="font-size: large; color: #0000FF">
+                    <ul class="nav navbar-nav navbar-right" 
+                        style="font-size: large; color: #0000FF; font-family: 'Times New Roman', Times, serif;">
+                    <li><a href="#">Call Now: 7760831646</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#pricing">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.row -->
+        </nav>
+
+
+        <!--== 5. Header ==-->
+        <section id="header-slider" class="owl-carousel">
+            <div class="item">
+                <div class="container">
+                    <div class="header-content" style="color: #e4dddd; font-weight: bolder; font-size: 150%;">
+                        <h1 >DESI FOOD</h1>
+                        <p>NO BURGER NO PIZZA ONLY PARATHA</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content" style="color: #fdfafa; font-weight: bolder; font-size: 150%;">
+                        <h1 >MOM FAST FOOD</h1>
+                        <p>NO BURGER NO PIZZA ONLY PARATHA</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                  <div class="header-content" style="color: #e4dada; font-weight: bolder; font-size: 150%;">
+                        <h1 >BEST QUALITY</h1>
+                        <p>NO BURGER NO PIZZA ONLY PARATHA</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--== 6. About us ==-->
+        <section id="about" class="about">
+            <img src="images/icons/about_color.png" class="img-responsive section-icon hidden-sm hidden-xs">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 dis-table-cell">
+                            <div class="section-content">
+                                <h2 class="section-content-title">About us</h2>
+                                <p class="MsoNormal">
+                                    <span lang="EN-IN">HEALTY FOOD IS A BASIC NEED &amp; NOT LUXURY</span><a 
+                                        name="_GoBack"></a><span lang="EN-IN"><o:p></o:p></span></p>
+                                <p class="text-justify">
+                                    <span lang="EN-IN">Sunshine Food Co is the 1st, Indian fast food Quick and Home 
+                                    Service Restaurant that primarily sells Parathas made from Whole Wheat, Paratha 
+                                    Subs, Salads &amp; Tray Meals. It is fastest growing single brand that serves 
+                                    Parathas in fast food style. It is owned and operated by unemployed house women.<o:p></o:p></span></p>
+                                <p class="text-justify">
+                                    <span lang="EN-IN"><span>&nbsp;&nbsp;&nbsp;&nbsp; </span>The concept behind the 
+                                    birth of Take Sunshine Food is to serve the clients with healthy, tasty &amp; nutritious 
+                                    eco-meal prepared from Whole Wheat. Each Paratha at Paratha Express are hand 
+                                    tossed with love &amp; garnished with our secret spices.<o:p></o:p></span></p>
+                                <p class="text-justify">
+                               
+                                    <span lang="EN-IN"><span></span>Within few years take 
+                                    Sunshine Foodwill changed the definition of fast food. Now the fast food is healthy, 
+                                    tasty nutritious only at Sunshine Food Co. Beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                                </p>
+                            </div> <!-- /.section-content -->
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#about -->
+
+
+        <!--==  7. Afordable Pricing  ==-->
+        <section id="pricing" class="pricing">
+            <div id="w">
+                <div class="pricing-filter">
+                    <div class="pricing-filter-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="section-header">
+                                        <h2 class="pricing-title">Gallery</h2>
+                                        <ul id="filter-list" class="clearfix">
+                                            <li class="filter" data-filter="all">All</li>
+                                            <li class="filter" data-filter=".paratha">Paratha</li>
+                                            <li class="filter" data-filter=".biryani">Biryani</li>
+                                            <li class="filter" data-filter=".pizza">Pizza</li>
+                                            <li class="filter" data-filter=".dinner"></li>
+                                        </ul><!-- @end #filter-list -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-md-10 col-md-offset-1">
+                            <ul id="menu-pricing" class="menu-price">
+                                <li class="item paratha">
+
+                                    <a href="#">
+                                        <img src="images/allo_paratha.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc text-center">
+                                            <span>
+                                                <h3>Allo Paratha</h3>
+                                               
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">INR45/2 Pcs.</h2>
+                                </li>
+
+                                <li class="item paratha">
+
+                                    <a href="#">
+                                        <img src="images/Chees_paratha.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Chees Paratha</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">INR90/Pcs.</h2>
+                                </li>
+                                <li class="item paratha">
+
+                                    <a href="#">
+                                        <img src="images/paneer_paratha.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Paneer Paratha</h3>
+                                              
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">INR65/2 Pcs.</h2>
+                                </li>
+                                <li class="item biryani">
+
+                                    <a href="#">
+                                        <img src="images/Biryani.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Veg. Biryani</h3>
+                                                
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">INR50/Plate</h2>
+                                </li>
+                                <li class="item pizza">
+
+                                    <a href="#">
+                                        <img src="images/pizza.jpg" class="img-responsive" alt="Food" >
+                                        <div class="menu-desc">
+                                            <span>
+                                                <h3>Pizza</h3>
+                                               
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white">INR100</h2>
+                                </li>
+                                      </ul>
+
+                            <!-- <div class="text-center">
+                                    <a id="loadPricingContent" class="btn btn-middle hidden-sm hidden-xs">Load More <span class="caret"></span></a>
+                            </div> -->
+
+                        </div>   
+                    </div>
+                </div>
+
+            </div> 
+        </section>
+
+
+   
+
+
+
+
+        <section id="contact" class="contact">
+            <div class="container-fluid color-bg">
+                <div class="row dis-table">
+                    <div class="hidden-xs col-sm-6 dis-table-cell">
+                        <h2 class="section-title">Contact With us</h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 dis-table-cell">
+                        <div class="style1">
+                            <p>Near VVIT CLG,Dharmapuri </p>
+                            <p>7760831646</p>
+                            <p>SunshineFoodCo@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <ul class="center-block">
+                                <li><a href="https://www.facebook.com/Sunshine.Food.Co.9" target="_blank" class="fb"></a></li>
+                               
+
+                                <li>Copyright, 2023 <a  href="https://www.varunsolutions.com">Varun Infotech Solutions Pvt Ltd</a> </li>
+                                <!--<li><a href="#" class="link"></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <section id="contact" class="contact">
+            <div class="container-fluid color-bg">
+            </div></section>
+
+     
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="copyright">
+                            <p>  </p>
+                             <!--   Copyright, 2017<a  href="https://www.dengsolutions.com">Deng Infotech Solutions Pvt Ltd</a> -->
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+        <script src="js/script.js"></script>
+        
+
+    </body>
+</html>
